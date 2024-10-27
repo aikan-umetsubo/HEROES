@@ -11,5 +11,6 @@ for NUM in `seq -f %003g 1 $MAX`
 do
     curl --silent ${BASEURL}${NUM}m.jpg > ${NUM}m.jpg
     echo ${NUM}m.jpg: Download complete.
+    sleep 3
 done
 
